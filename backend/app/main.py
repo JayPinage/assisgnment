@@ -13,7 +13,10 @@ app = FastAPI(title="Customer Support Ticketing CRM API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://assisgnment-five.vercel.app/dashboard",
+    ],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
