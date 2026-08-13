@@ -17,7 +17,7 @@ app.add_middleware(
         "http://localhost:5173",
         "https://assignment-five.vercel.app",
     ],
-    allow_credentials=False,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
